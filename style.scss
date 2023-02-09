@@ -29,6 +29,7 @@ body{
                 justify-content: space-between;
                 align-items: center;
                 .logo{
+                    cursor: pointer;
                     img{
                         width: 65px;
                     }
@@ -38,10 +39,12 @@ body{
                     flex-direction: row;
                     padding-left: 100px;
                     gap: 30px;
+                    a:hover{
+                        text-decoration: underline;
+                    }
                     a{
                         color: #373F41;
                         text-decoration: none;
-                        
                     }
                     @include mobile {     
                         flex-direction: column;
@@ -57,11 +60,24 @@ body{
                         font-weight: 700;
                         background: none;
                         color:#3C64B1;
+                        :hover{
+                            background: #3C64B1;
+                            color:#ffffff;
+                        }
                     }
                     .start{
                         font-weight: 700;
                         background: #3C64B1;
                         color:#ffffff;
+                    }
+                    .login:hover{
+                        background: #3C64B1;
+                        color:#ffffff;
+                        border: 1px #ffffff solid;
+                        opacity: 0.6;
+                    }
+                    .start:hover{
+                        opacity: 0.6;
                     }
                 }
                 
@@ -115,6 +131,15 @@ body{
                             background: none;
                             color: #3C64B1;
                             border: #3C64B1 1px solid;
+                        }
+                        #trial:hover{
+                            opacity: 0.6;
+                        }
+                        #more:hover{
+                            background: #3C64B1;
+                            color:#ffffff;
+                            border: 1px #ffffff solid;
+                            opacity: 0.6;
                         }
                     }
                 }
@@ -192,6 +217,9 @@ body{
                                 color: #3C64B1;
                                 text-decoration: none;
                             }
+                            a:hover{
+                                text-decoration: underline;
+                            }
                         }
                     }
                 }
@@ -257,6 +285,9 @@ body{
                                 input[type=text]:focus{
                                     outline: 1px #3C64B1 solid;
                                 }
+                                input[type=text]:hover{
+                                    outline: 1px #3C64B1 solid;
+                                }
                                 input[type=button]{
                                     cursor: pointer;
                                     border: none;
@@ -267,6 +298,9 @@ body{
                                     font-weight: 700;
                                     font-size: 14px;
                                     line-height: 18px;
+                                }
+                                input[type=button]:hover{
+                                    opacity: 0.6;
                                 }
                                 input{
                                     height: 40px;

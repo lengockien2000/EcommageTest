@@ -29,6 +29,9 @@ body .container .cover-header .header {
   justify-content: space-between;
   align-items: center;
 }
+body .container .cover-header .header .logo {
+  cursor: pointer;
+}
 body .container .cover-header .header .logo img {
   width: 65px;
 }
@@ -37,6 +40,9 @@ body .container .cover-header .header .navbar {
   flex-direction: row;
   padding-left: 100px;
   gap: 30px;
+}
+body .container .cover-header .header .navbar a:hover {
+  text-decoration: underline;
 }
 body .container .cover-header .header .navbar a {
   color: #373F41;
@@ -59,10 +65,23 @@ body .container .cover-header .header .auth .login {
   background: none;
   color: #3C64B1;
 }
+body .container .cover-header .header .auth .login :hover {
+  background: #3C64B1;
+  color: #ffffff;
+}
 body .container .cover-header .header .auth .start {
   font-weight: 700;
   background: #3C64B1;
   color: #ffffff;
+}
+body .container .cover-header .header .auth .login:hover {
+  background: #3C64B1;
+  color: #ffffff;
+  border: 1px #ffffff solid;
+  opacity: 0.6;
+}
+body .container .cover-header .header .auth .start:hover {
+  opacity: 0.6;
 }
 body .container .body {
   display: flex;
@@ -114,6 +133,15 @@ body .container .body .banner .content .btn #more {
   background: none;
   color: #3C64B1;
   border: #3C64B1 1px solid;
+}
+body .container .body .banner .content .btn #trial:hover {
+  opacity: 0.6;
+}
+body .container .body .banner .content .btn #more:hover {
+  background: #3C64B1;
+  color: #ffffff;
+  border: 1px #ffffff solid;
+  opacity: 0.6;
 }
 body .container .body .main-content {
   max-width: 1200px;
@@ -197,6 +225,9 @@ body .container .body .main-content .part1 .items .item a {
   color: #3C64B1;
   text-decoration: none;
 }
+body .container .body .main-content .part1 .items .item a:hover {
+  text-decoration: underline;
+}
 body .container .body .main-content .part2 .field1 {
   width: 50%;
 }
@@ -261,6 +292,9 @@ body .container .body .main-content .part2 .content .textfield .field input[type
 body .container .body .main-content .part2 .content .textfield .field input[type=text]:focus {
   outline: 1px #3C64B1 solid;
 }
+body .container .body .main-content .part2 .content .textfield .field input[type=text]:hover {
+  outline: 1px #3C64B1 solid;
+}
 body .container .body .main-content .part2 .content .textfield .field input[type=button] {
   cursor: pointer;
   border: none;
@@ -271,6 +305,9 @@ body .container .body .main-content .part2 .content .textfield .field input[type
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
+}
+body .container .body .main-content .part2 .content .textfield .field input[type=button]:hover {
+  opacity: 0.6;
 }
 body .container .body .main-content .part2 .content .textfield .field input {
   height: 40px;
