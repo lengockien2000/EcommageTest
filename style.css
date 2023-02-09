@@ -35,13 +35,19 @@ body .container .cover-header .header .logo img {
 body .container .cover-header .header .navbar {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   padding-left: 100px;
   gap: 30px;
 }
 body .container .cover-header .header .navbar a {
   color: #373F41;
   text-decoration: none;
+}
+@media (max-width: 767px) {
+  body .container .cover-header .header .navbar {
+    flex-direction: column;
+    padding: 0px 20px;
+    gap: 5px;
+  }
 }
 body .container .cover-header .header .auth {
   display: flex;
@@ -117,6 +123,12 @@ body .container .body .main-content {
   justify-content: center;
   gap: 80px;
 }
+@media (max-width: 1023px) {
+  body .container .body .main-content {
+    margin: 80px 40px;
+    gap: 40px;
+  }
+}
 body .container .body .main-content .part1 {
   display: flex;
   flex-direction: column;
@@ -142,6 +154,13 @@ body .container .body .main-content .part1 .items {
   flex-direction: row;
   gap: 2%;
 }
+@media (max-width: 767px) {
+  body .container .body .main-content .part1 .items {
+    flex-wrap: wrap;
+    gap: 4%;
+    align-items: center;
+  }
+}
 body .container .body .main-content .part1 .items .item {
   display: flex;
   flex-direction: column;
@@ -149,8 +168,14 @@ body .container .body .main-content .part1 .items .item {
   text-align: center;
   align-items: center;
 }
+@media (max-width: 767px) {
+  body .container .body .main-content .part1 .items .item {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+}
 body .container .body .main-content .part1 .items .item .logo {
-  width: 30px;
+  height: 30px;
   margin-bottom: 20px;
 }
 body .container .body .main-content .part1 .items .item .title {
@@ -176,12 +201,29 @@ body .container .body .main-content .part2 .field1 {
   width: 50%;
 }
 body .container .body .main-content .part2 .field2 {
-  width: 47%;
+  width: 45%;
   padding-top: 50px;
-  padding-left: 3%;
+  padding-left: 5%;
+}
+@media (max-width: 1023px) {
+  body .container .body .main-content .part2 .field1 {
+    width: 100%;
+  }
+  body .container .body .main-content .part2 .field2 {
+    width: 100%;
+    padding: 20px 0;
+  }
 }
 body .container .body .main-content .part2 .content {
   float: left;
+}
+@media (max-width: 1023px) {
+  body .container .body .main-content .part2 .content {
+    float: none;
+  }
+  body .container .body .main-content .part2 .content img {
+    width: 100%;
+  }
 }
 body .container .body .main-content .part2 .content img {
   width: 100%;
@@ -235,12 +277,26 @@ body .container .body .main-content .part2 .content .textfield .field input {
   border: none;
   background: #F4F5F4;
 }
+@media (max-width: 767px) {
+  body .container .body .main-content .part2 .content .textfield .field {
+    display: flex;
+  }
+}
 body .container .body .main-content .part2 .content .textfield .note {
   margin-top: 20px;
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
   color: #737B7D;
+}
+@media (max-width: 1023px) {
+  body .container .body .main-content .part3 {
+    display: flex;
+    flex-direction: column;
+  }
+  body .container .body .main-content .part3 div:first-child {
+    order: 1;
+  }
 }
 body .container .body .main-content .part3 .field1 {
   width: 45%;
@@ -250,8 +306,26 @@ body .container .body .main-content .part3 .field1 {
 body .container .body .main-content .part3 .field2 {
   width: 50%;
 }
+@media (max-width: 1023px) {
+  body .container .body .main-content .part3 .field1 {
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 0;
+  }
+  body .container .body .main-content .part3 .field2 {
+    width: 100%;
+  }
+}
 body .container .body .main-content .part3 .content {
   float: left;
+}
+@media (max-width: 1023px) {
+  body .container .body .main-content .part3 .content {
+    float: none;
+  }
+  body .container .body .main-content .part3 .content img {
+    width: 100%;
+  }
 }
 body .container .body .main-content .part3 .content img {
   width: 100%;
@@ -263,10 +337,20 @@ body .container .body .main-content .part3 .content .title {
   color: #373F41;
   margin-bottom: 60px;
 }
+@media (max-width: 1023px) {
+  body .container .body .main-content .part3 .content .title {
+    margin-bottom: 20px;
+  }
+}
 body .container .body .main-content .part3 .content .items {
   display: flex;
   flex-direction: row;
   gap: 30px;
+}
+@media (max-width: 1023px) {
+  body .container .body .main-content .part3 .content .items {
+    gap: 10px;
+  }
 }
 body .container .body .main-content .part3 .content .items .item img {
   height: 30px;
@@ -285,9 +369,21 @@ body .container .body .main-content .part4 {
   gap: 8%;
   overflow: wrap;
 }
+@media (max-width: 767px) {
+  body .container .body .main-content .part4 {
+    flex-wrap: wrap;
+    gap: 10%;
+  }
+}
 body .container .body .main-content .part4 .image-wrapper {
   width: 19%;
   overflow: hidden;
+}
+@media (max-width: 767px) {
+  body .container .body .main-content .part4 .image-wrapper {
+    width: 45%;
+    margin-bottom: 40px;
+  }
 }
 body .container .body .main-content .part4 .image-wrapper img {
   width: 100%;
@@ -300,8 +396,18 @@ body .container .body .main-content .part4 .image-wrapper .title {
   line-height: 23px;
   margin-top: 20px;
 }
+@media (max-width: 767px) {
+  body .container .body .main-content .part4 .image-wrapper .title {
+    margin-top: 10px;
+  }
+}
 body .container .body .main-content .part4 .image-wrapper .text {
   font-size: 14px;
   line-height: 18px;
   margin-top: 15px;
+}
+@media (max-width: 767px) {
+  body .container .body .main-content .part4 .image-wrapper .text {
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
